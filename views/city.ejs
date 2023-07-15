@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/card.css" />
+    <link rel="icon" href="images/title_logo.png" />
+  </head>
+  <body>
+    <%- include('./CommonFile/header'); %>
+    <div class="wraper">
+      <% place.map((item) => { %>
+      <div class="card">
+        <form action="/api/product" method="post">
+          <label for="img"><img src="<%= item.img %>" alt="" /></label>
+          <input type="hidden" id="img" name="img" value="<%= item.img %>" />
+          <label for="place"><%= item.place %></label>
+          <input
+            type="hidden"
+            id="place"
+            name="place"
+            required
+            value="<%= item.place %>"
+          />
+          <label for="distance"><%= item.distance %></label>
+          <input
+            type="hidden"
+            id="distance"
+            name="distance"
+            required
+            value="<%= item.distance %>"
+          />
+          <label for="date"><%= item.date %></label>
+          <input
+            type="hidden"
+            id="date"
+            name="date"
+            required
+            value="<%= item.date %>"
+          />
+          <label for="rate"><%= item.rate %></label>
+          <input
+            type="hidden"
+            id="rate"
+            name="rate"
+            required
+            value="<%= item.rate %>"
+          />
+
+          <button
+            type="submit"
+            class="my-button"
+            style="color: rgb(105, 104, 104)"
+          >
+            Visit Here
+          </button>
+        </form>
+      </div>
+      <% }); %>
+    </div>
+
+    <%- include('./CommonFile/footer'); %>
+  </body>
+</html>

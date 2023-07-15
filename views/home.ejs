@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>AirBnB: Vacation Rentals, Cabins, Beach Houses, ...</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/section.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <link rel="icon" href="images/title_logo.png" />
+  </head>
+  <body>
+    <%- include('./CommonFile/header'); %>
+
+    <section>
+      <div class="main-section">
+        <img
+          class="bg-image"
+          src="https://cdn.pixabay.com/photo/2018/08/16/08/39/hallstatt-3609863_960_720.jpg"
+          alt=""
+        />
+        <div class="image-text-1">
+          <p class="not-sure">Not sure where to? Perfect</p>
+          <button class="flex-btn">I'm flexible</button>
+        </div>
+      </div>
+      <div class="airBnB-gift-card">
+        <img class="gift-card-image" src="images/giftcard.png" alt="" />
+        <div class="image-text-2">
+          <p class="intro">Introducing</p>
+          <p class="airbnb">Airbnb</p>
+          <p class="airbnb">gift cards</p>
+          <button class="shop-now-btn">Shop now</button>
+        </div>
+      </div>
+      <div class="inspiration-trip">
+        <h1 class="inspiration-trip-title">
+          Inspiration for your next trip plz visit here
+        </h1>
+        <div class="inspiration-trip-location">
+          <div class="city">
+            <a href="/city">
+              <img class="location-image" src="images/fortportal.jpg" alt=""
+            /></a>
+            <div class="city-detail">
+              <p class="city-name">Fort Portal</p>
+              <p class="city-distance">252 kilometers</p>
+            </div>
+            <button class="my-button" style="background-color: tomato">
+              <a href="/city">Click me</a>
+            </button>
+          </div>
+          <div class="city">
+            <a href="/city"
+              ><img class="location-image" src="images/kamp.jpg" alt=""
+            /></a>
+            <div class="city-detail-1">
+              <p class="city-name">Kampala</p>
+              <p class="city-distance">302 kilometers</p>
+            </div>
+            <button
+              class="my-button"
+              style="background-color: rgb(255, 71, 178)"
+            >
+              <a href="/city">Click me</a>
+            </button>
+          </div>
+          <div class="city">
+            <a href="/city"
+              ><img class="location-image" src="images/jinja.jpg" alt=""
+            /></a>
+            <div class="city-detail-2">
+              <p class="city-name">Jinja</p>
+              <p class="city-distance">352 kilometers</p>
+            </div>
+            <button class="my-button" style="background-color: rgb(230, 39, 5)">
+              <a href="/city">Click me</a>
+            </button>
+          </div>
+          <div class="city">
+            <a href="/city">
+              <img class="location-image" src="images/kab.jpg" alt=""
+            /></a>
+            <div class="city-detail-3">
+              <p class="city-name">Kabale</p>
+              <p class="city-distance">442 kilometers</p>
+            </div>
+            <button class="my-button" style="background-color: rgb(161, 32, 9)">
+              <a href="/city">Click me</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="discover-container">
+        <h1 class="discover-title">Discover Airbnb Experiences</h1>
+        <div class="discover-images">
+          <div>
+            <img
+              src="https://cdn.pixabay.com/photo/2013/04/04/12/34/mountains-100367_960_720.jpg"
+              alt=""
+              class="discover-image-1"
+            />
+            <p class="experiences">Things to do on your trip</p>
+            <button class="experience-btn">Experiences</button>
+          </div>
+          <div>
+            <img
+              src="https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287_960_720.jpg"
+              alt=""
+              class="discover-image-2"
+            />
+            <p class="experiences">Things to do from home</p>
+            <button class="online-experience-btn">Online Experiences</button>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-image-section">
+        <img
+          class="bottom-image"
+          src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_960_720.jpg"
+          alt=""
+        />
+        <div class="bottom-image-text">
+          <p class="question">Questions</p>
+          <p class="question">about?</p>
+          <p class="question">hosting?</p>
+          <button class="ask-superhost">Ask a superhost</button>
+        </div>
+      </div>
+      <div class="future-getaways">
+        <h3 class="future-getaways-title">Inspiration for future getaways</h3>
+        <div class="bottom-nav-link">
+          <div class="bottom-nav-link-item">
+            <button>Destinations for arts & culture</button>
+            <button>Destinations for outdoor adventure</button>
+            <button>Mountain cabins</button>
+            <button>Beach destinations</button>
+            <button>Popular destinations</button>
+            <button>Unique Stays</button>
+          </div>
+        </div>
+        <hr />
+        <div class="loctaions-nav">
+          <div class="location-nav-link">
+            <div class="location-nav-link-item">
+              <span>Phonix</span>
+              <span class="location-city">Arizona</span>
+            </div>
+            <div class="location-nav-link-item">
+              <span>San Francisco</span>
+              <span class="location-city">Califonia</span>
+            </div>
+            <div class="location-nav-link-item">
+              <span>Kweswick</span>
+              <span class="location-city">England</span>
+            </div>
+          </div>
+
+          <div class="location-nav-link">
+            <div class="location-nav-link-item">
+              <span>Hotsprings</span>
+              <span class="location-city">Arkansas</span>
+            </div>
+            <div class="location-nav-link-item">
+              <span>Barcelona</span>
+              <span class="location-city">Catalonia</span>
+            </div>
+            <div class="location-nav-link-item">
+              <span>London</span>
+              <span class="location-city">England</span>
+            </div>
+          </div>
+
+          <div class="location-nav-link">
+            <div class="location-nav-link-item">
+              <span>Los Angeles</span>
+              <span class="location-city">Califonia</span>
+            </div>
+            <div class="location-nav-link-item">
+              <span>Prague</span>
+              <span class="location-city">Czechia</span>
+            </div>
+            <div class="location-nav-link-item">
+              <span>Scarborough</span>
+              <span class="location-city">England</span>
+            </div>
+          </div>
+
+          <div class="location-nav-link">
+            <div class="location-nav-link-item">
+              <span>San Diego</span>
+              <span class="location-city">Califonia</span>
+            </div>
+            <div class="location-nav-link-item">
+              <span>Washington</span>
+              <span class="location-city">District of Columbia</span>
+            </div>
+            <div class="location-nav-link-item">
+              <span class="show-more">Show More</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <%- include('./CommonFile/footer'); %>
+    </section>
+  </body>
+</html>

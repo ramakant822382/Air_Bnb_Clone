@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="icon" href="images/title_logo.png" />
+  </head>
+  <body>
+    <div><%- include('./CommonFile/header'); %></div>
+
+    <div class="cartWraper">
+      <% product.map((item) => { %>
+      <h1><%= item.distance %></h1>
+      <div class="carticon">
+        <div><h1><%= item.place %></h1></div>
+        <div>
+          <span> <%= item.rate %></span>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> ios_share </span>
+          <span class="material-symbols-outlined"> favorite </span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box">
+          <img src="<%= item.img %>" />
+        </div>
+        <div class="box">
+          <img src="<%= item.img %>" />
+        </div>
+        <div class="box">
+          <img src="<%= item.img %>" />
+        </div>
+        <div class="box">
+          <img src="<%= item.img %>" />
+        </div>
+      </div>
+
+      <div class="cheack">
+        <ul class="footerul">
+          <li>
+            <h3>Place:</h3>
+            <h3><%= item.place %></h3>
+          </li>
+          <li>
+            <h3>Date:</h3>
+            <h3><%= item.date %></h3>
+          </li>
+          <li>
+            <h3>Rate:</h3>
+            <h3>
+              <%= item.rate %>
+              <h4>Night</h4>
+            </h3>
+          </li>
+        </ul>
+        <div>
+          <button><a href="/reserve">Reserve</a></button>
+        </div>
+      </div>
+      <% }); %>
+    </div>
+    <%- include('./CommonFile/footer'); %>
+  </body>
+</html>
+
+<li></li>
